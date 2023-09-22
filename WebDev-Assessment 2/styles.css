@@ -78,6 +78,15 @@
     position: relative;
     z-index: 100;
   }
+.header_product{
+    min-height: 10vh;
+    background: linear-gradient(to top,
+        rgb(17, 117, 231, 0.5),
+        rgba(136, 0, 133, 0.6)),
+      url("./images/Banner1.jpg") center/cover no-repeat fixed;
+    position: relative;
+    z-index: 100;
+  }
   
   .header::after {
     content: "";
@@ -215,6 +224,9 @@
   
   .fix__nav .nav__icons .icon__item svg {
     fill: var(--dark-color);
+  }
+.nav__icons .icon__item img{
+    width: 20px;
   }
   
   .nav__icons .icon__item:last-child {
@@ -593,6 +605,52 @@
     .product__bottom h3 {
       font-size: 1.6rem;
     }
+  }  .product_product {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: left;
+  }
+  
+  .product_product:hover {
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .product_product .img__container {
+    height: 50rem;
+    overflow: hidden;
+  }
+  
+  .img__container img {
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .product_product:hover .img__container img {
+    transform: scale(1.05);
+  }
+  
+  .product_product svg {
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: var(--yellow);
+  }
+  
+  .product__bottom1 {
+    position: absolute;
+    left: 40%;
+    top: 15%;
+    padding-top: 1.6rem;
+  }
+  .desc{
+    position: absolute;
+    left: 40%;
+    top: 40%;
+  }
+  
+  .product__bottom1 h3 {
+    margin-bottom: 1rem;
+    font-size: 40px;
   }
   
   /* =========== Cart Slide =========== */
